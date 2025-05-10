@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Calculations</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Shape Calculations</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Cube">Cube</a></li>
+                    <li><a href="#Cuboid">Cuboid</a></li>
+                    <li><a href="#Cone">Cone</a></li>
+                    <li><a href="#Cylinder">Cylinder</a></li>
+                    <li><a href="#Sphere">Sphere</a></li>
+                    <li><a href="#HemiSphere">HemiSphere</a></li>
+                </ul>
+            </nav>
+        </center>
+    </header>
+
+    <section class="container">
+        <div id="Cube" class="card">
+            <h2>Cube</h2>
+            <img src="cube.jpg" alt="Cube"><hr>
+            <input type="text" id="cubeSide" placeholder="Side Length"><br><br>
+            <button onclick="calculateCube()">Calculate</button>
+            <p id="cubeResult"></p>
+        </div>
+
+        <div id="Cuboid" class="card">
+            <h2>Cuboid</h2>
+            <img src="cuboid.jpg" alt="Cuboid"><hr>
+            <input type="text" id="cuboidLength" placeholder="Length"><br><br>
+            <input type="text" id="cuboidWidth" placeholder="Width"><br><br>
+            <input type="text" id="cuboidHeight" placeholder="Height"><br><br>
+            <button onclick="calculateCuboid()">Calculate</button>
+            <p id="cuboidResult"></p>
+        </div>
+
+        <div id="Cone" class="card">
+            <h2>Cone</h2>
+            <img src="cone.jpg" alt="Cone"><hr>
+            <input type="text" id="coneRadius" placeholder="Radius"><br><br>
+            <input type="text" id="coneHeight" placeholder="Height"><br><br>
+            <button onclick="calculateCone()">Calculate</button>
+            <p id="coneResult"></p>
+        </div>
+
+        <div id="Cylinder" class="card">
+            <h2>Cylinder</h2>
+            <img src="cylinder.jpg" alt="Cylinder"><hr>
+            <input type="text" id="cylinderRadius" placeholder="Radius"><br><br>
+            <input type="text" id="cylinderHeight" placeholder="Height"><br><br>
+            <button onclick="calculateCylinder()">Calculate</button>
+            <p id="cylinderResult"></p>
+        </div>
+
+        <div id="Sphere" class="card">
+            <h2>Sphere</h2>
+            <img src="sphere.jpg" alt="Sphere"><hr>
+            <input type="text" id="sphereRadius" placeholder="Radius"><br><br>
+            <button onclick="calculateSphere()">Calculate</button>
+            <p id="sphereResult"></p>
+        </div>
+
+        <div id="HemiSphere" class="card">
+            <h2>Hemisphere</h2>
+            <img src="hemisphere.jpg" alt="Hemisphere"><hr>
+            <input type="text" id="hemisphereRadius" placeholder="Radius"><br><br>
+            <button onclick="calculateHemisphere()">Calculate</button>
+            <p id="hemisphereResult"></p>
+        </div>
+    </section>
+
+    <!-- Link to the JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
